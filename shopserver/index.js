@@ -145,7 +145,7 @@ function respond(response, config = {}) {
     }
 
     if (config.content) {
-        //console.log('respond:', config.content);
+        console.log('respond:', config.content);
         response.write(config.content);
     }
 
@@ -160,7 +160,7 @@ function sendAnswer(response) {
         .then(queryPendingList)
         .then((list) => {
             console.log('before respond');
-            respond(response, {httpCode: 200, contentType: 'application/json', content: list});
+            respond(response, {httpCode: 200, contentType: 'application/json', content: list.items});
         })
         .catch((err) => {
             console.log('sendAnswer', err);
