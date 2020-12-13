@@ -145,7 +145,7 @@ function respond(response, config = {}) {
     }
 
     if (config.content) {
-        console.log('respond:', config.content);
+        //console.log('respond:', config.content);
         response.write(config.content);
     }
 
