@@ -1,0 +1,19 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "Shop Server",
+  "main": "index.js",
+  "dependencies": {
+    "http": "0.0.0",
+    "http-server": "^0.12.3",
+    "nodemailer": "^6.4.11",
+    "sqlite": "^4.0.18",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
